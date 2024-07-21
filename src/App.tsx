@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 function App() {
   const vantaRef = useRef(null);
-  const colors = ["#4b3ad2", "#cc58de", "#de6657", "#ff904f"]
+  const colors = ["#4b3ad2", "#cc58de", "#de6657", "#ff904f", "#83B692", "#F9ADA0", "#F9627D", "#C65B7C", "#5B3758", "#2EC0F9", "#67AAF9", "#9BBDF9", "#C4E0F9", "#B95F89"]
 
   const midtoneColor = colors[Math.floor(Math.random() * colors.length)] 
   const highlightColor = colors[Math.floor(Math.random() * colors.length)] 
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className='app'>
-    <div ref={vantaRef} className='bg'>
+    <div ref={vantaRef} className='bg'>      
       <div className='w-screen relative z-10 flex flex-col items-center justify-center min-h-screen'>
         <div className="p-8 bg-gray-600/25 text-white rounded-lg shadow-lg max-w-md mx-auto space-y-8" style={{ animation: "smooth-appear 0.5s" }}>
           <p className="text-7xl font-bold mb-4 font-title text-center" style={{ background: `-webkit-linear-gradient(left, ${highlightColor}, ${midtoneColor})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", animation: "smooth-appear 2.5s" }}>mitchn</p>
@@ -47,17 +47,17 @@ function App() {
         </div>
         <div className="mt-4 flex items-stretch space-x-4" style={{ animation: "smooth-appear 6s" }}>
           <a href="https://github.com/crtmitchn">
-            <Button className='bg-gray-600/25'>
-              <i className="fa fa-github text-lg self-stretch"></i>&nbsp;&nbsp;GitHub
+            <Button className='bg-gray-600/25 shadow-lg self-stretch'>
+              <i className="fa fa-github text-lg"></i>&nbsp;&nbsp;GitHub
             </Button>
           </a>
           <a href="https://t.me/mi7chn">
-            <Button className='bg-gray-600/25 self-stretch'>
-              <i className="fa fa-telegram"></i>&nbsp;&nbsp;Telegram
+            <Button className='bg-gray-600/25 shadow-lg self-stretch'>
+              <i className="fa fa-telegram text-lg"></i>&nbsp;&nbsp;Telegram
             </Button>
           </a>
           <a href="https://discord.com/users/973147382155988992">
-            <Button className='bg-gray-600/25 self-stretch'>
+            <Button className='bg-gray-600/25 shadow-lg self-stretch'>
               <i className="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Discord
             </Button>
           </a>
